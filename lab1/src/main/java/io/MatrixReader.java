@@ -22,8 +22,15 @@ public class MatrixReader {
                     scanner.next();
                 }
             }
+            if (rawMatrix.size() != dimension * dimension) {
+                throw new ArrayIndexOutOfBoundsException();
+            }
             MatrixPacket mp = new MatrixPacket();
             mp.fillWithRaw(dimension, rawMatrix);
+            return mp;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            MatrixPacket mp = new MatrixPacket();
+            mp.fillWithRaw(-2, new ArrayList<>());
             return mp;
         } catch (IOException e) {
             MatrixPacket mp = new MatrixPacket();
@@ -43,6 +50,9 @@ public class MatrixReader {
                 MatrixReaderOutputs.REQUEST_LINE.request(String.valueOf(i + 1));
                 List<Double> list = new ArrayList<>();
                 String[] nums = br.readLine().split(" ");
+                if (nums.length != dimension) {
+                    throw new ArrayIndexOutOfBoundsException();
+                }
                 for (int j = 0; j < dimension; ++j) {
                     list.add(Double.parseDouble(nums[j]));
                 }

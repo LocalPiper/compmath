@@ -11,12 +11,14 @@ public class MatrixPacket {
         this.dimension = dimension;
         this.matrix = new ArrayList<>();
         int i = 0;
-        int j = 0;
         while (i < this.dimension) {
+            int j = 0;
+            List<Double> list = new ArrayList<>();
             while (j < this.dimension) {
-                this.matrix.get(i).set(j, rawMatrix.get(i * dimension + j));
+                list.add(rawMatrix.get(i * dimension + j));
                 ++j;
             }
+            this.matrix.add(list);
             ++i;
         }
     }
