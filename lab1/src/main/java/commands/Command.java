@@ -1,6 +1,9 @@
 package main.java.commands;
 
+import main.java.structures.MatrixPacket;
+import main.java.structures.ResultPacket;
+
 @FunctionalInterface
 public interface Command {
-    String execute();
+    ResultPacket execute(MatrixPacket mp);
 }

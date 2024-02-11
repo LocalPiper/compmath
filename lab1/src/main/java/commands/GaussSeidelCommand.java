@@ -1,7 +1,11 @@
 package main.java.commands;
 
+import main.java.receivers.IterationalMethodCommandReceiver;
+import main.java.structures.MatrixPacket;
+import main.java.structures.ResultPacket;
+
 public class GaussSeidelCommand implements Command {
-    public String execute() {
-        return new String();
+    public ResultPacket execute(MatrixPacket mp) {
+        return new IterationalMethodCommandReceiver().gaussSeidelMethod(mp);
     }
 }

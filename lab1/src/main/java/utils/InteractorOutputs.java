@@ -35,8 +35,11 @@ public enum InteractorOutputs {
             Error: requested file not found
                 """),
     ERR_INVALID_STRUCTURE("""
-            Error: file contents don't satisfy structure requirements
-                """);
+            Error: contents don't satisfy structure requirements
+                """),
+    ERR_UNKNOWN("""
+            Error: unknown
+            """);
 
     public final String label;
 

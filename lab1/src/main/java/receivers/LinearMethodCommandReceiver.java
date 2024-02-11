@@ -3,13 +3,13 @@ package main.java.receivers;
 import main.java.structures.MatrixPacket;
 import main.java.structures.ResultPacket;
 
-public class IterationalMethodCommandReceiver {
-    public ResultPacket simpleIterationMethod(MatrixPacket mp) {
-        // TODO: implement first
+public class LinearMethodCommandReceiver {
+    public ResultPacket gaussMethod(MatrixPacket mp) {
+        // TODO: implement
         return new ResultPacket();
     }
 
-    public ResultPacket gaussSeidelMethod(MatrixPacket mp) {
+    public ResultPacket modifiedGaussMethod(MatrixPacket mp) {
         // TODO: implement
         return new ResultPacket();
     }
