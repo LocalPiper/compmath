@@ -44,7 +44,7 @@ public class ComputationalCommandInvoker {
         commandHashMap.put("si", new SimpleIterationCommand());
         commandHashMap.put("gs", new GaussSeidelCommand());
 
-        commandHashMap.get(getUserCommand()).execute();
+        commandHashMap.get(getUserCommand()).execute(mp);
         return new ResultPacket();
     }
 }

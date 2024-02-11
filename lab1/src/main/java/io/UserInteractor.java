@@ -53,6 +53,7 @@ public class UserInteractor {
         if (mp.getDimension() == -1) {
             print(InteractorOutputs.ERR_FILE_NOT_FOUND);
         } else {
+            mp.outputMatrix();
             cci.invoke(mp);
         }
     }
@@ -66,6 +67,7 @@ public class UserInteractor {
         } else if (mp.getDimension() == -2) {
             print(InteractorOutputs.ERR_INVALID_STRUCTURE);
         } else {
+            mp.outputMatrix();
             cci.invoke(mp);
         }
     }

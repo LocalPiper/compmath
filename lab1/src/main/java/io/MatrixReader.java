@@ -40,10 +40,13 @@ public class MatrixReader {
             int dimension = Integer.parseInt(br.readLine());
             List<List<Double>> matrix = new ArrayList<>();
             for (int i = 0; i < dimension; ++i) {
+                MatrixReaderOutputs.REQUEST_LINE.request(String.valueOf(i + 1));
+                List<Double> list = new ArrayList<>();
                 String[] nums = br.readLine().split(" ");
                 for (int j = 0; j < dimension; ++j) {
-                    matrix.get(i).set(j, Double.parseDouble(nums[j]));
+                    list.add(Double.parseDouble(nums[j]));
                 }
+                matrix.add(list);
             }
             MatrixPacket mp = new MatrixPacket();
             mp.fill(dimension, matrix);
