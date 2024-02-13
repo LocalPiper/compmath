@@ -36,6 +36,11 @@ public class MatrixPacket {
         return matrix;
     }
 
+    public void setMatrix(List<List<Double>> newMatrix) {
+        this.matrix.clear();
+        this.matrix.addAll(newMatrix);
+    }
+
     public void outputMatrix() {
         System.out.println("Matrix of dimension " + dimension);
         for (List<Double> list : matrix) {
