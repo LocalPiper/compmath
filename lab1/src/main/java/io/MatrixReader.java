@@ -1,4 +1,4 @@
-package main.java.io;
+package io;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,8 +7,8 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import main.java.structures.MatrixPacket;
-import main.java.utils.MatrixReaderOutputs;
+import structures.MatrixPacket;
+import utils.MatrixReaderOutputs;
 
 public class MatrixReader {
     public MatrixPacket readFromFile(String filename) {

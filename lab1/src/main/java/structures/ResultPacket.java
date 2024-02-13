@@ -1,4 +1,4 @@
-package main.java.structures;
+package structures;
 
 public class ResultPacket {
 

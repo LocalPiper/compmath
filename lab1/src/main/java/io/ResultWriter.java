@@ -1,4 +1,4 @@
-package main.java.io;
+package io;
 
 public class ResultWriter {
 

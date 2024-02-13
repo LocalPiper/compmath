@@ -1,4 +1,4 @@
-package main.java;
+package app;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,14 +8,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import main.java.commands.Command;
-import main.java.commands.GaussCommand;
-import main.java.commands.GaussSeidelCommand;
-import main.java.commands.ModifiedGaussCommand;
-import main.java.commands.SimpleIterationCommand;
-import main.java.structures.MatrixPacket;
-import main.java.structures.ResultPacket;
-import main.java.utils.InvokerOutputs;
+import commands.Command;
+import commands.GaussCommand;
+import commands.GaussSeidelCommand;
+import commands.ModifiedGaussCommand;
+import commands.SimpleIterationCommand;
+import structures.MatrixPacket;
+import structures.ResultPacket;
+import utils.InvokerOutputs;
 
 public class ComputationalCommandInvoker {
     private void print(InvokerOutputs io) {

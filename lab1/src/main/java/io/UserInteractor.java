@@ -1,12 +1,12 @@
-package main.java.io;
+package io;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import main.java.ComputationalCommandInvoker;
-import main.java.structures.MatrixPacket;
-import main.java.utils.InteractorOutputs;
+import app.ComputationalCommandInvoker;
+import structures.MatrixPacket;
+import utils.InteractorOutputs;
 
 public class UserInteractor {
     private ComputationalCommandInvoker cci;

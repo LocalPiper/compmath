@@ -1,7 +1,7 @@
-package main.java.receivers;
+package receivers;
 
-import main.java.structures.MatrixPacket;
-import main.java.structures.ResultPacket;
+import structures.MatrixPacket;
+import structures.ResultPacket;
 
 public class IterationalMethodCommandReceiver {
     public ResultPacket simpleIterationMethod(MatrixPacket mp) {

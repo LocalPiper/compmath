@@ -1,8 +1,8 @@
-package main.java.commands;
+package commands;
 
-import main.java.receivers.LinearMethodCommandReceiver;
-import main.java.structures.MatrixPacket;
-import main.java.structures.ResultPacket;
+import receivers.LinearMethodCommandReceiver;
+import structures.MatrixPacket;
+import structures.ResultPacket;
 
 public class ModifiedGaussCommand implements Command {
     public ResultPacket execute(MatrixPacket mp) {

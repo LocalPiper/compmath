@@ -1,7 +1,7 @@
-package main.java.commands;
+package commands;
 
-import main.java.structures.MatrixPacket;
-import main.java.structures.ResultPacket;
+import structures.MatrixPacket;
+import structures.ResultPacket;
 
 @FunctionalInterface
 public interface Command {

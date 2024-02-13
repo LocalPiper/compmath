@@ -1,8 +1,8 @@
-package main.java;
+package app;
 
 import java.io.IOException;
 
-import main.java.io.UserInteractor;
+import io.UserInteractor;
 
 public class Main {
     public static void main(String[] args) {

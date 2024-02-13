@@ -1,8 +1,8 @@
-package main.java.commands;
+package commands;
 
-import main.java.receivers.IterationalMethodCommandReceiver;
-import main.java.structures.MatrixPacket;
-import main.java.structures.ResultPacket;
+import receivers.IterationalMethodCommandReceiver;
+import structures.MatrixPacket;
+import structures.ResultPacket;
 
 public class SimpleIterationCommand implements Command {
     public ResultPacket execute(MatrixPacket mp) {
