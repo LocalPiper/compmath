@@ -14,6 +14,10 @@ public class IterationalMethodCommandReceiver {
         System.out.println(message);
     }
 
+    private boolean checkHealth(List<Double> diag) {
+        return !diag.contains(0d);
+    }
+
     private int findIndexOfMax(List<Double> mr) {
         double sum = 0;
         for (double val : mr) {
@@ -43,6 +47,12 @@ public class IterationalMethodCommandReceiver {
                 sortedMatrix.add(mp.getMatrix().get(listOfMax.get(i)));
             }
             mp.setMatrix(sortedMatrix);
+            if (!checkHealth(mp.getDiagonal())) {
+                // b a d
+
+            } else {
+
+            }
         }
         return new ResultPacket();
     }

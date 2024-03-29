@@ -50,4 +50,12 @@ public class MatrixPacket {
             System.out.println();
         }
     }
+
+    public List<Double> getDiagonal() {
+        List<Double> diagonal = new ArrayList<>();
+        for (int i = 0; i < dimension; ++i) {
+            diagonal.add(matrix.get(i).get(i));
+        }
+        return diagonal;
+    }
 }
