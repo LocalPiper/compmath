@@ -70,7 +70,7 @@ begin
   begin
     FillCircle(x[i], -y[i], 2);
   end;
-  {this text is static, no idea how to make it scale with the window (fuck this PL)}
+  {this text is static, no idea how to make it scale with the window}
   DrawText(Window.Center.X - 100, -Window.Center.Y + 10, 10, 10, 'Blue - linear');
   DrawText(Window.Center.X - 100, -Window.Center.Y + 30, 10, 10, 'Green - polynomial2');
   DrawText(Window.Center.X - 100, -Window.Center.Y + 50, 10, 10, 'Yellow - polynomial3');
